@@ -1,0 +1,139 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  background-color: white;
+}
+
+.hide {
+  display: none;
+}
+
+.container {
+  background-color: rgb(175, 168, 168);
+  width: 100%;
+  max-width: 35.5em;
+  position: absolute;
+  padding: 3.22em 5em;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 4em;
+  border-radius: 0.9em;
+}
+
+.container h3 {
+  text-align: center;
+  font-size: 30px;
+}
+
+.outercircle {
+  width: 250px;
+  height: 250px;
+  margin-left: 20%;
+  margin-top: 5%;
+  border-radius: 50%;
+  align-items: center;
+  background-color: rgb(214, 213, 213);
+  box-shadow: 50px 50px 100px #949494, -50px -50px 100px #cbcbcb;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+
+  .stripes {
+    border: 4px dashed;
+    color: rgb(126, 126, 126);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+
+    .innercircle {
+      height: 200px;
+      width: 200px;
+      border-radius: 50%;
+      background-color: white;
+      box-shadow: 6px 6px 32px #797979, -6px -6px 32px #adabab;
+      margin-left: 9%;
+      margin-right: 7%;
+      margin-top: 8%;
+
+      align-items: center;
+      justify-content: center;
+      display: flex;
+
+      .innercircle2 {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-color: white;
+        box-shadow: 15px 15px 37px #d5d4d4, -15px -15px 37px #e2e0e0;
+      }
+    }
+  }
+}
+.timer {
+  align-items: center;
+  display: flex;
+  color: black;
+  justify-content: center;
+  margin-top: 42px;
+}
+
+.controlbuttons {
+  margin-top: 50px;
+  left: 20%;
+  gap: 0.5rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+
+  .btn1:hover {
+    background-color: black;
+    color: white;
+  }
+  .btn2:hover {
+    background-color: black;
+    color: white;
+  }
+  .btn3:hover {
+    background-color: black;
+    color: white;
+  }
+  .btn4:hover {
+    background-color: black;
+    color: white;
+  }
+}
+/* laptime */
+.laplog {
+  display: flex;
+  font-size: 20px;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+  padding: 10px;
+  margin-left: 35%;
+}
+.laplog2 {
+  background-color: rgb(129, 129, 129);
+  width: 120px;
+  border-radius: 10%;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+}
+#icon {
+  display: flex;
+  margin-left: 20%;
+  top: 0;
+  margin-bottom: 10px;
+  transform: translateX();
+  cursor: pointer;
+}
